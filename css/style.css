@@ -16,8 +16,8 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url('../images/background.jpg');
-  background-position: 50%;
+  background-image: url('/images/bgkubito.jpg');
+  background-position: 100%;
 
 }
 
@@ -27,10 +27,10 @@ body{
   padding: 25px 30px;
   overflow: hidden;
   position: relative;  
-  background: rgba(255, 255, 255, 0.288);
+  background: #fbfcff80;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(114, 54, 255, 0.342);
-  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(32, 32, 32, 0.500);
+  backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(8px);
 }
 
@@ -47,18 +47,19 @@ body{
 
 .top-bar i{
   font-size: 22px;
-  color: #ffffff;
+  color:#977B49;
 }
 
 .top-bar i:first-child{
   margin-left: -7px;
   font-size: 22px;
+  color: #D69D9B;
 }
 
 .top-bar span{
   font-size: 18px;
   margin-left: -3px;
-  color: #ffffff;
+  color: #5e5e5e;
 }
 
 .img-area{
@@ -68,10 +69,10 @@ body{
   margin-top: 25px;
   border-radius: 50%;
   border-radius: 50%;
-	box-shadow: 0 0 0 5px #ffffff,
-	0 0 2px rgba(255, 255, 255, 0.486),
-	13px 13px 20px #350c6483,
-	-10px -10px 20px #e6f6ff;
+	box-shadow: 
+  0 0 0 7px #ffffff,
+	5px 5px 10px #7c7c7c,
+	-10px -10px 8px #f1f1f1;
 }
 
 .img-area img{
@@ -86,10 +87,11 @@ body{
 }
 
 .song-details p{
-  color: #ffffff;
+  color: #5a5a5a;
 }
 
 .song-details .name{
+  font-weight: 400;
   font-size: 21px;
 }
 
@@ -103,7 +105,11 @@ body{
   height: 6px;
   width: 100%;
   border-radius: 50px;
-  background: #ffffff;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 
+  inset 1px 1px 1px #bebebe,
+  inset -1px -1px 1px #ffffff;
   cursor: pointer;
 }
 
@@ -112,7 +118,7 @@ body{
   width: 0%;
   position: relative;
   border-radius: inherit;
-  background: #84a5ff;
+  background: #D69D9B;
 }
 
 .progress-bar::before{
@@ -142,7 +148,7 @@ body{
 
 .song-timer span{
   font-size: 13px;
-  color: #ffffff;
+  color: #5a5a5a;
 }
 
 
@@ -152,7 +158,7 @@ body{
 
 .controls i{
   user-select: none;
-  background:#ffffff;
+  background:#5a5a5a;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -172,10 +178,30 @@ body{
 }
 
 .controls i.prev{
-  font-size: 28px;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  border-radius: 50%;
+  box-shadow:
+	5px 5px 10px #bebebe,
+	-5px -5px 10px #ffffff;
 }
 .controls i.next{
-  font-size: 28px;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  border-radius: 50%;
+  box-shadow:
+	5px 5px 10px #bebebe,
+	-5px -5px 10px #ffffff;
 }
 
 .controls .play-pause{
@@ -187,9 +213,9 @@ body{
   justify-content: center;
   border-radius: 50%;
   box-shadow: 
-	0 0 2px rgba(255, 255, 255, 0.13),
-	8px 8px 15px #1a00638f,
-	-3px -3px 15px #ffffff56;
+	0 0 2px rgba(255, 255, 255),
+	5px 5px 10px #bebebe,
+	-5px -5px 10px #ffffff;
 }
 
 .play-pause::before{
@@ -209,14 +235,14 @@ body{
   background: inherit;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-fill-color: #5a5a5a;
   position: absolute;
 }
 
 .prev , .next {
-  box-shadow: 
-	8px 8px 15px #1a00638f,
-	-3px -3px 15px #ffffff56;
+  box-shadow:
+	5px 5px 10px #bebebe,
+	-5px -5px 10px #ffffff;
   border-radius: 50%;
 }
 
@@ -232,9 +258,9 @@ body{
   padding: 15px 30px;
   border-radius: 15px;
   background:
-  linear-gradient(rgba(124, 185, 255, 0.877), transparent),
-  linear-gradient(to top left, rgba(176, 162, 255, 0.884), transparent),
-  linear-gradient(to top right, rgba(74, 54, 255, 0.801), transparent);
+  linear-gradient(rgba(255, 255, 255), transparent),
+  linear-gradient(to top left, rgb(138, 138, 138), transparent),
+  linear-gradient(to top right, rgba(255, 255, 255), transparent);
   background-blend-mode: screen;
   transition: all 0.15s ease-in-out;
 }
@@ -257,8 +283,8 @@ body{
   cursor: pointer;
   padding-bottom: 10px;
   margin-bottom: 5px;
-  color: #ffffff;
-  border-bottom:  1px solid #e5e5e5;
+  color: #5a5a5a;
+  border-bottom:  1px solid #c5c5c5;
 }
 
 .music-list ul li:last-child{
@@ -281,7 +307,7 @@ ul li .audio-duration{
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: #ffffff;
+  color: #5a5a5a;
   padding-top: 10px;
   padding-bottom: 12px;
 }
@@ -296,7 +322,7 @@ ul li .audio-duration{
 
 .header #close{
   font-size: 22px;
-  color: #ffffff;
+  color: #5a5a5a;
   padding-top: 10px;
   padding-bottom: 12px;
 }
@@ -306,10 +332,10 @@ ul li .audio-duration{
 }
 
 .music-list ul li:hover{
-  color: #1f23ff;
+  color: #000000;
 }
 
 ul li.playing{
   pointer-events: none;
-  color: #676aff;
+  color: #977B49;
 }
